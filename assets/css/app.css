@@ -1,0 +1,11 @@
+/* This file is for your main application css. */
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+@import "./phoenix.css";
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
