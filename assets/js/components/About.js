@@ -19,7 +19,7 @@ class About extends React.Component {
           simple ways to log and search your researches, code snippets,
           bookmarks, ...; Also what is important is to categorize all those
           topics and make them useful for later usage. DarkTea tries to solve
-          these problems for you.
+          these problems for you ;-)
         </p>
         <p>
           I am Farsheed Ashouri and if you are using DarkTea and somehow you

@@ -1,8 +1,9 @@
 // We need to import the CSS so that webpack will load it.
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
-import css from "../css/app.css";
 
+import "semantic-ui-css/semantic.min.css";
+import css from "../css/app.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
