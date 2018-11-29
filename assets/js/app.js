@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header";
+import Login from "./components/Login";
 import About from "./components/About";
 
 // webpack automatically bundles all modules in your
@@ -25,11 +26,11 @@ import "phoenix_html";
 //
 ReactDOM.render(
   <div>
-    <Header />
     <Router>
       <section className="darktea-route-section">
+        <Header />
         <Route path="/about" exact component={About} />
-        <Route path="/" exact component={Header} />
+        <Route path="/login" exact component={Login} />
       </section>
     </Router>
   </div>,

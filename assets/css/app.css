@@ -6,9 +6,23 @@
 
 body {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
+    font-size: 13px;
+    background-color: #212121;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, li, textarea, table, tr, td {
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    color: #f2f2f2 !important;
+}
+
+input, button {
+
+    background-color: #313131 !important;
+    color: white !important;
 }
 
 h2.about {

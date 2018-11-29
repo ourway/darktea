@@ -18,6 +18,7 @@ defmodule DarkteaWeb.Router do
 
     get "/", PageController, :index
     get "/:page", PageController, :index
+    get "/:scope/:page", PageController, :index
   end
 
   # Other scopes may use custom stacks.

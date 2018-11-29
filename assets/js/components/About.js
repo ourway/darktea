@@ -12,7 +12,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="jumbotron">
-        <h2 className="about">DarkTea is all about simplicity</h2>
+        <h2 className="about">DarkTea is all /about/ simplicity</h2>
         <p className="about">
           There are millions of ways for you to log your development progress;
           but I bet non of them are painless. What you probability need is
