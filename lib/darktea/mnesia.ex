@@ -128,8 +128,14 @@ defmodule Darktea.Db.Setup do
       idxs = attrs |> Enum.filter(fn x -> x |> to_string |> String.ends_with?("_idx") end)
 
       case :mnesia.create_table(name, [
-             {:disc_copies, all_active_nodes()},
-             {:type, :ordered_set},
+             {:disc_only_copies, all_active_nodes()},
+             {:type, :set},
+             {:frag_properties,
+              [
+                {:node_pool, all_active_nodes},
+                {:n_fragments, 16},
+                {:n_disc_only_copies, all_active_nodes |> length}
+              ]},
              majority: true,
              attributes: attrs,
              index: idxs
