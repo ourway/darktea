@@ -133,7 +133,7 @@ defmodule Darktea.Db.Setup do
              {:frag_properties,
               [
                 {:node_pool, all_active_nodes},
-                {:n_fragments, 16},
+                {:n_fragments, 4},
                 {:n_disc_only_copies, all_active_nodes |> length}
               ]},
              majority: true,
